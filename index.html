@@ -1,0 +1,88 @@
+<!-- Name: Wani Tombe Student Number: 8927743 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A comprehensive page about Martin Luther King Jr.">
+    <meta name="keywords" content="Martin Luther King Jr., civil rights, biography">
+    <title>Martin Luther King Jr. Tribute</title>
+</head>
+<body>
+    <header>
+        <h1>Martin Luther King Jr.</h1>
+    </header>
+
+    <main>
+        <section id="biography">
+            <h2>Biography</h2>
+            <blockquote cite="https://www.biography.com/activist/martin-luther-king-jr">
+                Martin Luther King Jr. was a prominent American Civil Rights Movement leader during the 1950s and 1960s. Known for his advocacy of nonviolent protest and his stirring oratory, he championed equality and justice, leading impactful campaigns that contributed to significant legislative changes and societal advancements in the fight against racial segregation and discrimination in the United States.
+            </blockquote>
+        </section>
+
+        <section id="quote">
+            <h2>Famous Quote</h2>
+            <blockquote cite="https://www.nobelprize.org/prizes/peace/1964/king/biographical/">
+                <q>I have a dream that one day this nation will rise up and live out the true meaning of its creed.</q>
+            </blockquote>
+        </section>
+
+        <section id="video">
+            <h2>Video</h2>
+            <video controls>
+                <source src="videos/I-have-a-dream.mp4" type="video/mp4" width="700" height="500">
+                Your browser does not support the video tag.
+            </video>
+        </section>
+
+        <section id="image">
+            <h2>Image</h2>
+            <figure>
+                <img src="images/mlk_march.jpg" alt="Martin Luther King Jr." width="700" height="500">
+                <figcaption>Martin Luther King Jr. at the March on Washington for Jobs and Freedom.</figcaption>
+            </figure>
+        </section>
+    </main>
+
+    <aside>
+        <section id="links">
+            <h2>Related Links</h2>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Martin_Luther_King_Jr." target="_blank" title="Wikipedia Page">Wikipedia</a></li>
+                <li><a href="https://www.thekingcenter.org/" target="_blank" title="The King Center">The King Center</a></li>
+                <li><a href="https://www.nps.gov/malu/index.htm" target="_blank" title="National Park Service">National Park Service</a></li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form action="submit.php" method="post">
+                <label for="name" class="form-label">Name:</label>
+                <input type="text" id="name" name="name" class="form-control" required placeholder="Enter your name" autofocus>
+
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" required placeholder="Enter your email">
+
+                <label for="message" class="form-label">Message:</label>
+                <textarea id="message" name="message" class="form-control" required placeholder="Enter your message"></textarea>
+
+                <label for="category" class="form-label">Category:</label>
+                <select id="category" name="category" class="form-control" required>
+                    <option value="" disabled selected>Select a category</option>
+                    <option value="general">General Inquiry</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="support">Support</option>
+                </select>
+
+                <input type="submit" value="Submit" class="form-control">
+            </form>
+        </section>
+    </aside>
+
+    <footer>
+        <p>&copy; 2024 Wani Tombe</p>
+    </footer>
+</body>
+</html>
